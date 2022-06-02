@@ -35,7 +35,7 @@ def print_results(data):
         f"HOST:{data['host']} | ISP:{data['isp']} | LATENCY: {data['latency']}".center(80))
     print(Fore.MAGENTA + "-"*80)
 
-def mainMet():
+def main_met():
     data= {}
 
     print(Fore.GREEN + "GETTING BEST AVAILABLE SERVERS, UPLOADING & DOWNLOADING SPEED.....")
@@ -67,4 +67,4 @@ def mainMet():
     
 if __name__== "__main__":
     clear_screen()
-    mainMet()
+    main_met()
