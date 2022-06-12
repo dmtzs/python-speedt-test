@@ -19,4 +19,21 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/dmtzs/python-speedt-test?logo=github">
 </p>
 
-# Description
+## The project
+This project can be used to calculate your download, upload and ping of your internet service.
+Also more information can be displayed. This script can be run oinly in Widnows and Linux systems. Mac is not supported.
+
+## Documentation
+To see the documentation and how to run the program please click [here]()
+
+## Supported versions for releases
+To see the releases supported versions please click [here]() to see the supported ones and unsupported ones.
+
+<br><br>
+# Donations
+
+Please consider a donation to help us and keep doing more open source code.
+
+To donate, please follow this [link](https://ceneka.net/dmtzs).
+
+Also options in cryptocurrencies for donations will be added in this part if you wish to donate through there.
