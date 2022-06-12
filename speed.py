@@ -43,11 +43,13 @@ def main_met():
     speed.get_best_server()
     for i in tqdm(range(100), colour="green", desc="Finding Optimal Server"):
         time.sleep(0.005)
+    print("Processing data\n")
 
     data["ping"]= speed.results.ping
     downReal= speed.download(threads=None)
     for i in tqdm(range(100), colour="cyan", desc="Getting Download Speed"):
         time.sleep(0.005)
+    print("Processing data\n")
 
     upReal= speed.upload(threads=None, pre_allocate= False)
     for i in tqdm(range(100), colour="red", desc="Getting Upload Speed"):
