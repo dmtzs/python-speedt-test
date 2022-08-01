@@ -1,4 +1,4 @@
-# pip install speedtest-cli to use the library
+# pip install speedtest-cli
 # Measures in bits per second
 try:
     import os
