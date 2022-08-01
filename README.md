@@ -5,11 +5,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/dmtzs/python-speedt-test?logo=github">
-  <img src="https://img.shields.io/github/contributors/dmtzs/python-speedt-test?logo=github">
-  <img src="https://img.shields.io/github/issues/dmtzs/python-speedt-test?label=issues&&logo=github">
+  <img src="https://img.shields.io/github/last-commit/dmtzs/python-speedt-test">
+  <img src="https://img.shields.io/github/contributors/dmtzs/python-speedt-test">
+  <img src="https://img.shields.io/github/issues/dmtzs/python-speedt-test?label=issues">
   <img src="https://img.shields.io/github/stars/dmtzs/python-speedt-test?logo=github">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/dmtzs/python-speedt-test?logo=python">
+  <img alt="Pylint" src="https://github.com/dmtzs/python-speedt-test/actions/workflows/pylint.yml/badge.svg?logo=github">
 </p>
 
 <p align="center">
