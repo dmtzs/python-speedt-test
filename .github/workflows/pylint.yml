@@ -26,7 +26,7 @@ jobs:
         base: master  #Uses the branch that trigger the workflow
         filters: |
           pyfiles:
-            - '/**.py'
+            - 'speed.py'
     
     # run only if 'api' files were changed
     - name: workflow tests
