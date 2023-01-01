@@ -8,8 +8,8 @@ try:
     import speedtest as st
     from typing import Union
     from colorama import Fore, init
-except ImportError as eImp:
-    print(f"The following import error ocurred: {eImp}")
+except ImportError as e_imp:
+    print(f"The following import error ocurred: {e_imp}")
 
 init(autoreset=True)
 
