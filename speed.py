@@ -6,13 +6,14 @@ try:
     import platform
     from tqdm import tqdm
     import speedtest as st
+    from typing import Union
     from colorama import Fore, init
 except ImportError as eImp:
     print(f"The following import error ocurred: {eImp}")
 
 init(autoreset=True)
 
-def clear_screen():
+def clear_screen() -> None:
     actual_system = platform.system()
 
     if actual_system == "Windows":
@@ -23,7 +24,7 @@ def clear_screen():
         print("The script only runs in linux and windows os systems")
         exit()
 
-def print_results(data):
+def print_results(data: dict[str, Union[str, int, float]]) -> None:
     print("\n\n")
     print(Fore.MAGENTA + "="*80)
     print(Fore.GREEN + "INTERNET SPEED TEST RESULTS:".center(80))
@@ -35,7 +36,7 @@ def print_results(data):
         f"HOST:{data['host']} | ISP:{data['isp']} | LATENCY: {data['latency']}".center(80))
     print(Fore.MAGENTA + "-"*80)
 
-def main_met():
+def main_met() -> None:
     data= {}
 
     print(Fore.GREEN + "GETTING BEST AVAILABLE SERVERS, UPLOADING & DOWNLOADING SPEED.....")
@@ -45,9 +46,9 @@ def main_met():
         time.sleep(0.005)
     print("Processing data\n")
 
-    data["ping"]= speed.results.ping
+    data["ping"] = speed.results.ping
     downReal= speed.download(threads=None)
-    for i in tqdm(range(100), colour="cyan", desc="Getting Download Speed"):
+    for _ in tqdm(range(100), colour="cyan", desc="Getting Download Speed"):
         time.sleep(0.005)
     print("Processing data\n")
 
